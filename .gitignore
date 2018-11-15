@@ -1,0 +1,10 @@
+.htaccess
+src/config.php
+src/admin/config.php
+
+!index.html
+
+src/image/data/
+src/image/cache/
+
+src/system/storage/
