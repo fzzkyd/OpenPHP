@@ -1,0 +1,20 @@
+{
+    "name": "fzzkyd/OpenPHP",
+    "description": "openphp",
+    "type": "project",
+    "license": "GPL-3.0+",
+    "authors": [
+        {
+            "name": "fzzkyd",
+            "email": "amogha@qq.com"
+        }
+    ],
+    "config": {
+        "vendor-dir": "./upload/system/storage/vendor/"
+    },
+    "require": {
+        "leafo/scssphp": "0.7.6",
+        "twig/twig": "1.35.3",
+        "php": ">=5.4.0"
+    }
+}
