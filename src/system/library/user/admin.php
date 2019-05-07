@@ -1,12 +1,4 @@
 <?php
-/**
- * @package         OpenPHP
- * @author          Shi
- * @license         GPL-3.0
- * @deprecated      The OpenPHP framework was extracted from OpenCart and made some
- *                  adjustments, thanks to the OpenCart development team.
- */
-
 namespace User;
 
 /**
