@@ -59,8 +59,6 @@ These instructions are for a manual installation using FTP, cPanel or other web 
 
 5. Visit the site homepage e.g. http://www.example.com
 
- - Notes -
-
 ## License
 
 [GNU General Public License version 3 (GPLv3)](http://www.gnu.org/licenses/gpl-3.0.en.html)
