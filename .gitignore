@@ -7,4 +7,4 @@ src/admin/config.php
 src/image/data/
 src/image/cache/
 
-src/system/storage/
+# storage/
