@@ -26,6 +26,9 @@ define('ERR_DISPLAY', true);
 define('ERR_LOG', true);
 define('ERR_FILENAME', 'error.log');
 
+// DATE
+define('DATE_TIMEZONE', 'PRC');
+
 // DB
 define('DB_DRIVER', 'mysqli');
 define('DB_HOSTNAME', 'localhost');
@@ -34,3 +37,4 @@ define('DB_PASSWORD', 'root');
 define('DB_DATABASE', 'op_openphp');
 define('DB_PORT', '3306');
 define('DB_PREFIX', 'op_');
+define('DB_AUTOSTART', true);
