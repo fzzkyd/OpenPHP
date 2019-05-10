@@ -13,7 +13,7 @@ if (version_compare(phpversion(), '5.4.0', '<') == true) {
 }
 
 if (!ini_get('date.timezone')) {
-    date_default_timezone_set('UTC');
+    date_default_timezone_set(DATE_TIMEZONE);
 }
 
 // Windows IIS Compatibility
