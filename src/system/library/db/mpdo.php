@@ -158,11 +158,11 @@ final class mPDO
     }
 
     /**
-     * isConnected
+     * connected
      *
      * @return	bool
      */
-    public function isConnected()
+    public function connected()
     {
         if ($this->connection) {
             return true;

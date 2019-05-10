@@ -103,11 +103,11 @@ final class Postgre
     }
 
     /**
-     * isConnected
+     * connected
      *
      * @return	bool
      */
-    public function isConnected()
+    public function connected()
     {
         return pg_ping($this->link);
     }

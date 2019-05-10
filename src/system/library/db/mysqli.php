@@ -94,11 +94,11 @@ final class MySQLi
     }
 
     /**
-     * isConnected
+     * connected
      *
      * @return	bool
      */
-    public function isConnected()
+    public function connected()
     {
         return $this->connection->ping();
     }
