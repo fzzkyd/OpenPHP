@@ -10,9 +10,6 @@ $_['url_autostart']         = true;
 $_['language_directory']    = 'en-gb';
 $_['language_autoload']     = array('en-gb');
 
-// Date
-$_['date_timezone']         = 'UTC';
-
 // Database
 $_['db_engine']             = 'mysqli'; // mpdo, mssql, mysql, mysqli or postgre
 $_['db_hostname']           = 'localhost';
@@ -40,9 +37,9 @@ $_['cache_engine']          = 'file'; // apc, file, mem or memcached
 $_['cache_expire']          = 3600;
 
 // Session
-$_['session_engine']        = 'db';
 $_['session_autostart']     = true;
-$_['session_name']          = 'OCSESSID';
+$_['session_engine']        = 'db';
+$_['session_name']          = 'OPSESSID';
 
 // Template
 $_['template_engine']       = 'twig';

@@ -32,8 +32,11 @@ $_['action_error']          = 'error/not_found';
 $_['action_pre_action']     = array(
     'startup/startup',
     'startup/error',
+    'startup/event',
+	'startup/sass',
+	'startup/login',
+	'startup/permission'
 );
 
 // Action Events
-$_['action_event']          = array(
-);
+$_['action_event']          = array();

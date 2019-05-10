@@ -13,7 +13,7 @@ $_['db_username']            = DB_USERNAME;
 $_['db_password']            = DB_PASSWORD;
 $_['db_database']            = DB_DATABASE;
 $_['db_port']                = DB_PORT;
-$_['db_autostart']           = false;
+$_['db_autostart']           = DB_AUTOSTART;
 
 // Session
 $_['session_autostart']      = true;
@@ -37,10 +37,11 @@ $_['action_error']          = 'error/not_found';
 
 // Actions
 $_['action_pre_action']      = array(
-    'startup/startup',
-    'startup/error',
+	'startup/session',
+	'startup/startup',
+	'startup/error',
+	'startup/event'
 );
 
 // Action Events
-$_['action_event']             = array(
-);
+$_['action_event']             = array();
