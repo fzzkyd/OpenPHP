@@ -16,8 +16,7 @@ class Cache
     {
         $class = 'Cache\\' . $adaptor;
 
-        if (class_exists($class))
-        {
+        if (class_exists($class)) {
             $this->adaptor = new $class($expire);
         } else {
             throw new \Exception('Error: Could not load cache adaptor ' . $adaptor . ' cache!');
@@ -54,7 +53,7 @@ class Cache
      *
      * @param   string      $key        The cache key
      *
-     * @return  bool|int|void
+     * @return  bool
      */
     public function delete($key)
     {

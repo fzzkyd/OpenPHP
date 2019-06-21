@@ -86,6 +86,8 @@ class File
      * Delete
      *
      * @param	string		$key
+     * 
+     * @return  bool
      */
     public function delete($key)
     {
@@ -94,9 +96,15 @@ class File
         if ($files) {
             foreach ($files as $file) {
                 if (file_exists($file)) {
-                    unlink($file);
+                    if (!unlink($file)) {
+                        return false;
+                    }
                 }
             }
+
+            return true;
         }
+
+        return false;
     }
 }

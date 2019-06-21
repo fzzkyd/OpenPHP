@@ -46,6 +46,8 @@ class APC
      * Delete
      *
      * @param	string		$key
+     * 
+     * @return  bool
      */
     public function delete($key)
     {
@@ -57,8 +59,12 @@ class APC
         $cache_list = $cache_info['cache_list'];
         foreach ($cache_list as $entry) {
             if (strpos($entry['info'], CACHE_PREFIX . $key) === 0) {
-                apcu_delete($entry['info']);
+                if (!apcu_delete($entry['info'])) {
+                    return false;
+                }
             }
         }
+
+        return true;
     }
 }

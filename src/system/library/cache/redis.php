@@ -54,10 +54,10 @@ class Redis
      *
      * @param	string		$key
      *
-     * @return  int
+     * @return  bool
      */
     public function delete($key)
     {
-        $this->cache->delete(CACHE_PREFIX . $key);
+        return $this->cache->delete(CACHE_PREFIX . $key) ? true : false;
     }
 }
