@@ -25,6 +25,9 @@ $_['template_engine']        = 'twig';
 $_['template_directory']     = 'default/template/';
 $_['template_cache']         = true;
 
+// Autoload Libraries
+$_['library_autoload']   	 = array();
+
 // Error
 $_['error_display']            = ERR_DISPLAY;
 $_['error_log']                = ERR_LOG;
@@ -44,4 +47,16 @@ $_['action_pre_action']      = array(
 );
 
 // Action Events
-$_['action_event']             = array();
+$_['action_event']             = array(
+	'controller/*/before' => array(
+		// 0 => 'event/debug/before',
+		100 => 'event/language/before'
+	),
+	'controller/*/after' => array(
+		// 0 => 'event/debug/after',
+		100 => 'event/language/after'
+	),
+	'view/*/before' => array(
+		500  => 'event/language'
+	)
+);
