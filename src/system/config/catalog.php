@@ -29,25 +29,24 @@ $_['template_cache']         = true;
 $_['library_autoload']   	 = array();
 
 // Error
-$_['error_display']            = ERR_DISPLAY;
-$_['error_log']                = ERR_LOG;
-$_['error_filename']           = ERR_FILENAME;
+$_['error_display']          = ERR_DISPLAY;
+$_['error_log']              = ERR_LOG;
+$_['error_filename']         = ERR_FILENAME;
 
 // Actions
-$_['action_default']        = 'common/home';
-$_['action_router']         = 'startup/router';
-$_['action_error']          = 'error/not_found';
+$_['action_default']         = 'common/home';
+$_['action_router']          = 'startup/router';
+$_['action_error']           = 'error/not_found';
 
 // Actions
 $_['action_pre_action']      = array(
 	'startup/session',
 	'startup/startup',
-	'startup/error',
-	'startup/event'
+	'startup/error'
 );
 
 // Action Events
-$_['action_event']             = array(
+$_['action_event']           = array(
 	'controller/*/before' => array(
 		// 0 => 'event/debug/before',
 		100 => 'event/language/before'

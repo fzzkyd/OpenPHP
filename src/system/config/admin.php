@@ -19,9 +19,9 @@ $_['session_autostart']     = true;
 $_['template_cache']        = true;
 
 // Error
-$_['error_display']            = ERR_DISPLAY;
-$_['error_log']                = ERR_LOG;
-$_['error_filename']           = ERR_FILENAME;
+$_['error_display']         = ERR_DISPLAY;
+$_['error_log']             = ERR_LOG;
+$_['error_filename']        = ERR_FILENAME;
 
 // Actions
 $_['action_default']        = 'common/dashboard';
@@ -31,11 +31,7 @@ $_['action_error']          = 'error/not_found';
 // Action Pre Events
 $_['action_pre_action']     = array(
     'startup/startup',
-    'startup/error',
-    'startup/event',
-	'startup/sass',
-	'startup/login',
-	'startup/permission'
+	'startup/error'
 );
 
 // Action Events
