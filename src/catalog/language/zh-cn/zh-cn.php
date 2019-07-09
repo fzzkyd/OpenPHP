@@ -15,7 +15,6 @@ $_['text_yes']              = '是';
 $_['text_no']               = '否';
 $_['text_none']             = '--- 无 --- ';
 $_['text_select']           = '--- 请选择 --- ';
-$_['text_all_zones']        = '所有区域';
 $_['text_pagination']       = '显示 %d 到 %d 总计 %d (共 %d 页)';
 $_['text_loading']          = '加载中......';
 $_['text_no_results']       = '无符合条件的结果';
