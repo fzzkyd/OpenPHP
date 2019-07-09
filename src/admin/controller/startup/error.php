@@ -4,7 +4,7 @@ class ControllerStartupError extends Controller
     public function index()
     {
         $this->registry->set('log', new Log($this->config->get('error_filename')));
-        
+
         set_error_handler(array($this, 'handler'));
     }
 
