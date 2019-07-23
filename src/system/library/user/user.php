@@ -184,7 +184,7 @@ CREATE TABLE `oc_user_group` (
 --
 
 INSERT INTO `oc_user_group` (`user_group_id`, `name`, `permission`) VALUES
-(1, 'Useristrator', '{"access":["user\\/api","user\\/user","user\\/user_permission"],"modify":["user\\/api","user\\/user","user\\/user_permission"]}'),
+(1, 'Administrator', '{"access":["user\\/api","user\\/user","user\\/user_permission"],"modify":["user\\/api","user\\/user","user\\/user_permission"]}'),
 (10, 'Demonstration', '');
 
 */
